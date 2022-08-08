@@ -1,0 +1,147 @@
+body {
+  background-image: url(../img/img.gif);
+  /* background-position: center; */
+  background-size: 27rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.App {
+  text-align: center;
+  border-radius: 3rem;
+  box-shadow: 4 4 4;
+  
+  max-width: 50%;
+  padding: 10%;
+  display: flex;
+  margin: 1rem auto;
+  display: block;
+  justify-content: center;
+  opacity: 5;
+  --border-radius: 15px;
+  --border-width: 4px;
+  appearance: none;
+  position: relative;
+  padding: 1em 2em;
+  border: 0;
+  background: rgb(5, 5, 22);
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  z-index: 2;
+  border-radius: 15px;
+  
+}
+
+ 
+
+.App button {
+  padding: 0.3rem 3rem;
+  font-size: 2rem;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all .3s;
+  margin-left: 40%;
+}
+
+button:active,
+button:hover {
+outline: 0;
+}
+
+button span {
+background-color: rgb(5, 6, 45);
+padding: 16px 24px;
+border-radius: 6px;
+width: 100%;
+height: 100%;
+transition: 300ms;
+}
+
+button:hover span {
+background: none;
+}
+
+button:active {
+transform: scale(0.9);
+}
+.Container {
+  display: flex;
+}
+.App img {
+  height: auto;
+}
+.App i {
+  color:#B23A4C;
+}
+.App span {
+  color:#f80000;
+}
+.DataContainer h6{
+  font-size: 1rem;
+}
+.Loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../img/carga.gif') 50% 50% no-repeat black;
+  
+}
+
+@media only screen and (min-width: 500px) {
+  .App img {
+    height: 10rem;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .App img {
+    height: 13rem;
+  }
+  .Container {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .App img {
+    height: 19rem;
+  }
+  .DataContainer h6{
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .App {
+    padding:3%;
+  }
+  .App img {
+    height: 19rem;
+    opacity: 100%;
+  }
+  .DataContainer h6{
+    font-size: 1.5rem;
+  }
+  
+  .App h3, h1 {
+    font-size: 1.5rem;
+  }
+}
